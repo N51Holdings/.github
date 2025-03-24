@@ -1,0 +1,95 @@
+name: "🐞 Bug Report"
+description: "Report a bug in the system"
+title: "[BUG] <brief description>"
+labels: ["bug"]
+assignees:
+  - ""  # Change to a specific GitHub username if needed.
+
+body:
+  - type: markdown
+    attributes:
+      value: "## 🐞 Bug Report\nPlease provide all necessary details below to help us resolve the issue."
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: "📌 Bug Description"
+      description: "Describe the issue in detail."
+      placeholder: "Describe the bug here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: "⚠️ Preconditions"
+      description: "List any setup steps required before reproducing the bug."
+      placeholder: "E.g., user must be logged in"
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: "🛠️ Steps to Reproduce"
+      description: "List step-by-step instructions to reproduce the issue."
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error message
+    validations:
+      required: true
+
+  - type: input
+    id: expected_result
+    attributes:
+      label: "✅ Expected Result"
+      description: "What should happen?"
+      placeholder: "The system should..."
+
+  - type: input
+    id: actual_result
+    attributes:
+      label: "❌ Actual Result"
+      description: "What actually happened?"
+      placeholder: "The system did..."
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "🔥 Severity"
+      description: "How severe is the bug?"
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "🚀 Priority"
+      description: "How urgent is the fix?"
+      options:
+        - High
+        - Medium
+        - Low
+
+  - type: input
+    id: environment
+    attributes:
+      label: "🖥️ Environment"
+      description: "Mention OS, browser, or app version."
+      placeholder: "Windows 11, Chrome 110"
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "📋 Additional Context"
+      description: "Any extra details, logs, or error messages."
+  
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "📸 Screenshots"
+      description: "Paste or upload screenshots."
