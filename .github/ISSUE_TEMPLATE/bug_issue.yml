@@ -1,7 +1,7 @@
 
 name: "🐞 Bug Report"
 description: "Report a bug in the system"
-title: "FROM DOT REPO"
+title: ""
 labels: ["bug"]
 assignees:
   - ""  # Change to a specific GitHub username if needed.
